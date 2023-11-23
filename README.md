@@ -4,8 +4,8 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/Abhattgithub/single-price-grid-component-master)
+- Live Site URL: (https://abhattgithub.github.io/single-price-grid-component-master/)
 
 
 ### Built with
