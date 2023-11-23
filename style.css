@@ -1,0 +1,130 @@
+@font-face {
+    font-family: karla;
+    src: url(https://fonts.google.com/specimen/Karla);
+}
+
+html *{
+    font-family: karla,sans-serif !important;
+}
+body{
+    width:100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(204, 43%, 93%);
+}
+div,
+h1,
+h2,
+a{
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+} 
+h1,
+h2{
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+p{
+    font-size: 13px;
+}
+
+.card{
+    margin: 15% 5%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Join community */
+.community-section{
+    background-color: white;
+    padding: 5%;
+    min-height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.community-section h1{
+    color: hsl(179, 62%, 43%);
+}
+.community-section h2{
+    color:hsl(71, 73%, 54%);
+}
+.community-section p{
+    color: hsl(218, 22%, 67%);
+    line-height: 1.7;
+}
+
+
+/* Monthly Subscribers*/
+.subscription-section{
+    color: white;
+    padding: 5%;
+    background-color: hsl(179, 62%, 43%);
+    min-height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.subscription-section p span{
+    align-items: center;
+}
+.subscription-section #costText{
+    font-size: 30px;
+    font-weight: 700;
+}
+.subscription-section #costIntervalText{
+    color: hsl(218, 22%, 90%);
+}
+.subscription-section a{
+    display: inline-block;
+    text-align: center;
+    background-color: hsl(71, 73%, 54%);
+    width: 100%;
+    color: white;
+    border-radius: 5px;
+    padding: 2% 0;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Why Us */
+.whyus-section{
+    min-height: 200px;
+    background-color: hsl(179, 56%, 49%);
+    padding: 5%;
+    color: white;
+    line-height: 1.5;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media only screen and (min-width: 375px){
+    body{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        max-width: 620px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .community-section{
+        grid-column: 1 /span 2;
+    }
+    .subscription-section,
+    .whyus-section{
+        padding: 10%;
+    }
+}
